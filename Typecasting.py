@@ -27,3 +27,12 @@ print(set)
 print(type(set))
 print(tuple)
 print(type(tuple))
+
+#seperate file
+set = {6,1,7}
+list = list(set)
+tuple = tuple(set)
+print(list)
+print(type(list))
+print(tuple)
+print(type(tuple))
