@@ -19,5 +19,15 @@ from collections import deque
 people_line = deque(['Alice', 'Bob', 'Charlie'])
 
 # Joining and Leaving
-people_line.append('David')
-people_line.popleft()
+people_line.append('David') #right
+print(people_line)
+
+people_line.popleft() #left
+print(people_line)
+
+people_line.pop() #right
+print(people_line)
+
+people_line.appendleft('Elon') #left
+print(people_line)
+
