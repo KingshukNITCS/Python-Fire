@@ -31,6 +31,7 @@ print(List)
 
 
 
+#You can flatten a multidimensional list into a 1D list using list comprehension:
 
 matrix = [
     [2, 4, 8],
@@ -39,3 +40,32 @@ matrix = [
 ]
 flattened_list = [element for row in matrix for element in row]
 print(flattened_list)
+
+
+
+#You can the position of an element inside a multidimensional list:
+
+matrix = [
+    [1, 8 , 3],
+    [7, 5, 6],
+]
+element = 5
+position = [(i, row.index(element)) for i, row in enumerate(matrix) if element in row]
+print(position)
+
+
+#Problem Statement - Finding maximum value in a 2 D list.
+
+def find_max_value(matrix):
+    max_value = float('-inf') 
+    for row in matrix:
+        max_value = max(max_value, max(row))
+    return max_value
+
+matrix = [
+    [3, 7, 1, 2],
+    [8, 5, 6, 4],
+    [2, 1, 8, 9]
+]
+max_value = find_max_value(matrix)
+print("\nMaximum Value:", max_value)
