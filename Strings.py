@@ -32,3 +32,29 @@ print("Slicing characters between " +
 	"3rd and 3rd last character: ") 
 print(String1[3:-3]) 
 
+string = "python program run on python IDLE, in pythonic way."
+count = string.count("python")
+print(count)
+
+string = "Python is powerful and Pythonic."
+index = string.find("Python")
+print(index) 
+index = string.find("python")
+print(index) #-1
+
+# Default order 
+String1 = "{} {} {}".format('Begineer', 'in', 'Python') 
+print("Print String in default order: ") 
+print(String1) 
+
+# Positional Formatting 
+String1 = "{1} {0} {2}".format('Begineer', 'in', 'Python') 
+print("\nPrint String in Positional order: ") 
+print(String1) 
+
+# Keyword Formatting 
+String1 = "{l} {f} {g}".format(g='Begineer', f='in', l='Python') 
+print("\nPrint String in order of Keywords: ") 
+print(String1) 
+
+
