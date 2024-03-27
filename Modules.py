@@ -58,4 +58,14 @@ if __name__ == "__main__":
     print(reverse_list([2,4,5,7,9])
 
 # A package is a way of organizing related modules into a single directory hierarchy
+"""
+'''
+          The given code appears to be checking whether the current Python module is being executed directly or being imported as a module into another program. Let's break it down step by step:
 
+1. `if __name__ == "__main__":` - This line checks if the special variable `__name__` is equal to `"__main__"`. The `__name__` variable is a built-in variable in Python that represents the name of the current module or script. When a Python module is imported into another program, its `__name__` attribute is set to the module's name. However, when a module is executed directly as the main program, its `__name__` attribute is set to `"__main__"`. Therefore, this condition will only be true if the current module is being executed directly.
+
+2. `print(reverse_list([2,4,5,7,9]))` - This line calls a function named `reverse_list` and passes a list `[2,4,5,7,9]` as an argument. The function `reverse_list` presumably takes a list as input and returns a new list with the elements reversed. The returned reversed list is then passed as an argument to the `print` function, which outputs the result to the console.
+
+In summary, if this code is executed directly as the main program, it will call the `reverse_list` function with the list `[2,4,5,7,9]` and print the reversed list. If this code is imported as a module into another program, the code inside the `if __name__ == "__main__":` block will not be executed, and only the function definitions and other code outside that block will be available to the importing program.
+'''
+"""
