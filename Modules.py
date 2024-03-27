@@ -33,4 +33,29 @@ evens = filter_even([3,5,6,7,8,0])
 
 print(evens)      
 
+# Importing with an Alias
+
+import list_operations as op
+
+reverse = op.reverse_list([5, 2, 7, 6])
+print(reverse) 
+
+
+
+# Special Variables in Modules
+
+def find_average(numbers):
+    if not numbers:
+        return 0
+    return sum(numbers) / len(numbers)
+def reverse_list(numbers):
+    return numbers[::-1]
+def filter_even(numbers):
+    return [num for num in numbers if num % 2 == 0]
+  
+if __name__ == "__main__":
+    # Code here will only run when the module is executed directly
+    print(reverse_list([2,4,5,7,9])
+
+# A package is a way of organizing related modules into a single directory hierarchy
 
