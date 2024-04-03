@@ -1,3 +1,10 @@
+'''
+Sets do not allow duplicate elements. Each element in a set must be unique.
+Sets are unordered, meaning the elements do not have a specific order. Unlike lists, sets do not have indices.
+Sets are mutable, meaning you can add or remove elements after the set is created.
+Due to their unordered nature, sets do not support indexing. You cannot access elements by index as you would with lists.
+'''
+
 Set={1,2,3,4}
 Set.add(6)
 Set.update([4,5,6])
