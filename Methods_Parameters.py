@@ -52,3 +52,24 @@ large_circle = Circle(radius=5)  # Specifies a radius of 5
 print("Area of small circle:", small_circle.area())  
 print("Area of large circle:", large_circle.area())  
               
+# Relevance to Data Science
+# As you step into the world of data science, methods and parameters become your crafty companions. They allow you to tailor your tools for specific data tasks and make your helpers adaptable and versatile. Let's extend our dataset class to have a method that detects outliers with a customizable threshold.
+
+class DataSet:
+    def __init__(self, data):
+        self.data = data
+
+    def detect_outliers(self, threshold=2):
+        mean_value = sum(self.data) / len(self.data)
+        std_dev = (sum((x - mean_value) ** 2 for x in self.data) / len(self.data)) ** 0.5
+        return [x for x in self.data if abs(x - mean_value) > threshold * std_dev]
+
+# Usage
+data_set = DataSet([15, 20, 25, 30, 100])
+outliers = data_set.detect_outliers(threshold=1.5)
+
+another_data_set = DataSet([50, 60, 70, 80, 90])
+
+# Using the Same Method with Different Parameters
+outliers_another = another_data_set.detect_outliers(threshold=2)
+        
