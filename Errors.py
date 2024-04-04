@@ -25,4 +25,24 @@ value = my_list[5]
 # ValueError
 age = int("twenty")
 
+# FileNotFoundError
+with open("nonexistent_file.txt", "r") as file:
+    content = file.read()
 
+# KeyError
+my_dict = {"name": "Alice", "age": 30}
+value = my_dict["gender"]
+
+# AttributeError
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+
+person = Person("Bob")
+age = person.age
+
+# ImportError
+import non_existent_module
+
+	
