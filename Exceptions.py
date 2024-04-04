@@ -82,3 +82,56 @@ The finally block contains code that is always executed, whether an exception oc
 '''
 
 
+
+'''
+Raise Statement
+When catching exceptions, it's important to consider the context and decide whether to handle the exception locally or raise a new one. The raise statement is useful when you want to propagate an exception with additional information or when you want to replace a caught exception with a more specific one. The except statement is used to
+'''
+def divide_numbers(a, b):
+    try:
+        if b == 0:
+            raise ZeroDivisionError("Cannot divide by zero.")
+        result = a / b
+        return result
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        # You can choose to re-raise the caught exception or raise a different one.
+        raise ValueError("Custom error message") from e
+
+# Example usage:
+try:
+    result = divide_numbers(10, 2)
+    print(f"Result: {result}")
+except ValueError as ve:
+    print(f"Caught a ValueError: {ve}")
+except ZeroDivisionError as zde:
+    print(f"Caught a ZeroDivisionError: {zde}")
+'''
+In the above code, the divide_numbers function attempts to divide a by b. If b is zero, a ZeroDivisionError is explicitly raised with a custom error message. If any other exception occurs during the division, it catches the exception, prints an error message, and then raises a ValueError with a different custom error message.
+'''
+
+'''
+Assertion in Python
+Assertions are used to check whether a given logical expression is true or false. If the expression is false, the interpreter will raise an AssertionError exception, and if it's true, the program will continue executing. Assertions are typically used during development and testing to catch potential errors early.
+'''
+assert Expressions, message 
+
+'''
+The 'Expressions' is the conditional being tested.
+
+message (optional) is an error message that is displayed if the assertion fails.
+'''
+x = 5
+assert x > 0, "x should be greater than 0"
+
+name = "John"
+assert len(name) >= 3, "Name should be at least 3 characters long"
+
+'''
+assertions are useful for catching programming errors early in the development process, but they should not be used to handle runtime errors or replace proper error handling mechanisms.
+'''
+
+
+
+
+
