@@ -85,3 +85,68 @@ ndarray of zeros having given shape, order and datatype.
 
 '''
 
+
+# Python Program illustrating
+# numpy.zeros method
+ 
+import numpy as geek
+ 
+b = geek.zeros(2, dtype = int)
+print("Matrix b : \n", b)
+ 
+a = geek.zeros([2, 2], dtype = int)
+print("\nMatrix a : \n", a)
+ 
+c = geek.zeros([3, 3])
+print("\nMatrix c : \n", c)
+
+
+'''
+Output : 
+
+Matrix b : 
+ [0 0]
+
+Matrix a : 
+ [[0 0]
+ [0 0]]
+
+Matrix c : 
+ [[ 0.  0.  0.]
+ [ 0.  0.  0.]
+ [ 0.  0.  0.]]
+ '''
+
+# Python Program illustrating
+# numpy.ones method
+ 
+import numpy as geek
+ 
+b = geek.ones(2, dtype = int)
+print("Matrix b : \n", b)
+ 
+a = geek.ones([2, 2], dtype = int)
+print("\nMatrix a : \n", a)
+ 
+c = geek.ones([3, 3])
+print("\nMatrix c : \n", c)
+
+'''
+Output : 
+ 
+
+Matrix b : 
+ [1 1]
+
+Matrix a : 
+ [[1 1]
+ [1 1]]
+
+Matrix c : 
+ [[ 1.  1.  1.]
+ [ 1.  1.  1.]
+ [ 1.  1.  1.]]
+'''
+
+
+
