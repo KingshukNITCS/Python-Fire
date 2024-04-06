@@ -43,5 +43,45 @@ So we have first printed the list and then converted the list to an array and di
 
 a=np.array([1,2,3,4])
 b=np.array([[1,2,3,4],[5,6,7,8]])
-print(a.ndim)
-print(b.ndim)
+print(a.ndim) #1
+print(b.ndim) #2
+
+
+'''
+Now we have few more functions such as np.array.shape, np.array.size and np.array.dtype
+
+shape will basically return us the total number of rows and columns of the array in a tuple format (number of rows, number of columns)
+
+size will tell us the total number of elements or values present in the array
+
+dtype will tell us the data type of values which the array is containing
+'''
+
+b=np.array([[1,2,3,4],[5,6,7,8]])
+print(b.shape) # (2,4)
+print(b.size) # 8
+print(b.dtype) # int32
+
+
+'''
+
+The numpy.zeros() function returns a new array of given shape and type, with zeros. Syntax:
+
+numpy.zeros(shape, dtype = None, order = 'C')
+Parameters :
+
+ 
+
+shape : integer or sequence of integers
+order  : C_contiguous or F_contiguous
+         C-contiguous order in memory(last index varies the fastest)
+         C order means that operating row-rise on the array will be slightly quicker
+         FORTRAN-contiguous order in memory (first index varies the fastest).
+         F order means that column-wise operations will be faster. 
+dtype : [optional, float(byDeafult)] Data type of returned array.  
+Returns : 
+
+ndarray of zeros having given shape, order and datatype.
+
+'''
+
