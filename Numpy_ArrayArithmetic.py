@@ -78,4 +78,103 @@ Output
 [  10  360  130 3000]
 '''
 
+import numpy as np
+ 
+# Defining both the matrices
+a = np.array([5, 72, 13, 100])
+b = np.array([2, 5, 10, 30])
+ 
+# Performing division using arithmetic operators
+div_ans = a/b
+print(div_ans)
+ 
+# Performing division using numpy functions
+div_ans = np.divide(a, b)
+print(div_ans)
+
+'''
+Output
+
+[ 2.5        14.4         1.3         3.33333333]
+[ 2.5        14.4         1.3         3.33333333]
+'''
+
+# import numpy library
+import numpy
+ 
+# creating a numpy array of integers
+arr = numpy.array([1, 5, 4, 8, 3, 7])
+ 
+# finding the maximum and
+# minimum element in the array
+max_element = numpy.max(arr)
+min_element = numpy.min(arr)
+ 
+# printing the result
+print('maximum element in the array is: ',
+      max_element)
+print('minimum element in the array is: ',
+      min_element)
+
+
+
+# import numpy library
+import numpy
+ 
+# creating a two dimensional
+# numpy array of integers
+arr = numpy.array([[11, 2, 3],
+                     [4, 5, 16],
+                      [7, 81, 22]])
+ 
+# finding the maximum and
+# minimum element in the array
+max_element = numpy.max(arr)
+min_element = numpy.min(arr)
+ 
+# printing the result
+print('maximum element in the array is:',
+      max_element)
+print('minimum element in the array is:',
+      min_element)
+
+
+# import numpy library
+import numpy
+ 
+# creating a two dimensional
+# numpy array of integers
+arr = numpy.array([[11, 2, 3],
+                     [4, 5, 16],
+                      [7, 81, 22]])
+ 
+# finding the maximum and
+# minimum element in the array
+max_element_column = numpy.max(arr, 0)
+max_element_row = numpy.max(arr, 1)
+ 
+min_element_column = numpy.amin(arr, 0)
+min_element_row = numpy.amin(arr, 1)
+ 
+# printing the result
+print('maximum elements in the columns of the array is:',
+      max_element_column)
+ 
+print('maximum elements in the rows of the array is:',
+      max_element_row)
+ 
+print('minimum elements in the columns of the array is:',
+      min_element_column)
+ 
+print('minimum elements in the rows of the array is:',
+      min_element_row)
+
+'''
+Output: 
+
+maximum elements in the columns of the array is: [11 81 22]
+maximum elements in the rows of the array is: [11 16 81]
+minimum elements in the columns of the array is: [4 2 3]
+minimum elements in the rows of the array is: [2 4 7]
+'''
 
