@@ -148,5 +148,29 @@ Matrix c :
  [ 1.  1.  1.]]
 '''
 
+# The arange([start,] stop[, step,][, dtype]) : Returns an array with evenly spaced elements as per the interval. The interval mentioned is half-opened i.e. [Start, Stop) 
+
+# Python Programming illustrating
+# numpy.arange method
+ 
+import numpy as geek
+ 
+print("A\n", geek.arange(4).reshape(2, 2), "\n")
+print("A\n", geek.arange(4, 10), "\n")
+print("A\n", geek.arange(4, 20, 3), "\n")
+
+'''
+Output : 
+
+A
+ [[0 1]
+ [2 3]]
+
+A
+ [4 5 6 7 8 9]
+
+A
+ [ 4  7 10 13 16 19]
+ '''
 
 
