@@ -173,4 +173,88 @@ A
  [ 4  7 10 13 16 19]
  '''
 
+# The numpy.linspace() function returns number spaces evenly w.r.t interval. Similar to numpy.arange() function but instead of step it uses sample number
+
+# Python Programming illustrating
+# numpy.linspace method
+ 
+import numpy as geek
+ 
+# restep set to True
+print("B\n", geek.linspace(2.0, 3.0, num=5, retstep=True), "\n")
+ 
+# To evaluate sin() in long range
+x = geek.linspace(0, 2, 10)
+print("A\n", geek.sin(x))
+
+'''
+Output : 
+
+B
+ (array([ 2.  ,  2.25,  2.5 ,  2.75,  3.  ]), 0.25)
+
+A
+ [ 0.          0.22039774  0.42995636  0.6183698   0.77637192  0.8961922
+  0.9719379   0.99988386  0.9786557   0.90929743]
+'''
+
+
+'''
+The numpy.reshape() function shapes an array without changing the data of the array.
+
+Syntax:
+
+numpy.reshape(array, shape, order = 'C')
+'''
+# Python Program illustrating
+# numpy.reshape() method
+ 
+import numpy as geek
+ 
+# array = geek.arrange(8)
+# The 'numpy' module has no attribute 'arrange'
+array1 = geek.arange(8)
+print("Original array : \n", array1)
+ 
+# shape array with 2 rows and 4 columns
+array2 = geek.arange(8).reshape(2, 4)
+print("\narray reshaped with 2 rows and 4 columns : \n",
+      array2)
+ 
+# shape array with 4 rows and 2 columns
+array3 = geek.arange(8).reshape(4, 2)
+print("\narray reshaped with 4 rows and 2 columns : \n",
+      array3)
+ 
+# Constructs 3D array
+array4 = geek.arange(8).reshape(2, 2, 2)
+print("\nOriginal array reshaped to 3D : \n",
+      array4)
+
+'''
+Output : 
+
+Original array : 
+ [0 1 2 3 4 5 6 7]
+
+array reshaped with 2 rows and 4 columns : 
+ [[0 1 2 3]
+ [4 5 6 7]]
+
+array reshaped with 4 rows and 2 columns : 
+ [[0 1]
+ [2 3]
+ [4 5]
+ [6 7]]
+
+Original array reshaped to 3D : 
+ [[[0 1]
+  [2 3]]
+ [[4 5]
+  [6 7]]]
+  
+ 
+ [[0 1 2 3]
+ [4 5 6 7]]
+ '''
 
