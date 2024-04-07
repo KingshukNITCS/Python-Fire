@@ -1,0 +1,70 @@
+Creating Sub Directories in Bulk:
+
+n = 'GFG'
+os.mkdir(n)
+for i in range(1000):
+    name = n +'/'+ n + " " + str(i+1) //i=0 GFG/GFG1 
+                                     // i=50 GFG/GFG50
+    os.mkdir(name)
+ 
+
+This code can be used to create 1000 sub folders inside a folder GFG.
+
+ 
+
+Hierarchal Bulk Directory Creation:
+
+master = 'GFG'
+os.mkdir(master)
+n = 5
+m = 5
+for i in range(n):
+    name = master +'/'+ master + " " + str(i+1)
+    os.mkdir(name) 
+    for j in range(m):
+        name = master +'/'+ master + " " + str(i+1) +"/"+ master + " " + str(j+1) 
+        os.mkdir(name)        
+print(n*m + n + 1)
+How this code will create directories 
+GFG                            
+    ->GFG 1
+        ->GFG 1
+        ->GFG 2
+        ->GFG 3
+        ->GFG 4
+        ->GFG 5
+    ->GFG 2
+        ->GFG 1
+        ->GFG 2
+        ->GFG 3
+        ->GFG 4
+        ->GFG 5
+    ->GFG 3
+        ->GFG 1
+        ->GFG 2
+        ->GFG 3
+        ->GFG 4
+        ->GFG 5
+    ->GFG 4
+        ->GFG 1
+        ->GFG 2
+        ->GFG 3
+        ->GFG 4
+        ->GFG 5
+    ->GFG 5
+        ->GFG 1
+        ->GFG 2
+        ->GFG 3
+        ->GFG 4
+        ->GFG 5
+The outer loop n will be used to create main 5 folders GFG 1 GFG 2 so on up-to GFG 5 then the inner m loop will be used to create 5 sub directories.
+
+Hence Each directory will be having 5 sub directories
+
+Master directory i.e., GFG = 1
+
+Child directories = 5 {GFG1 GFG2 … GFG5}
+
+Number of inner directories = 25
+
+Hence 31 directories will be created for this code changing values of m and n will change the number of directories created.
