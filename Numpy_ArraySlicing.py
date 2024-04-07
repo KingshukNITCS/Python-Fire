@@ -34,7 +34,10 @@ print(arr[ 3 , 1])
 print()
 print(arr[ 1: , 1:])
 '''
-print(arr[ 3 , 1])
-print()
-print(arr[ 1: , 1:])
+Output:
+3
+
+[[6 7 8]
+ [7 6 5]
+ [3 2 1]]
 '''
