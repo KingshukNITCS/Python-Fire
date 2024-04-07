@@ -1,0 +1,12 @@
+Reading Text files in bulk
+
+for i in files:
+    if i != '.DS_Store':
+        fd = open('Files/'+i,'r')
+        print('Files/'+i, fd.read())
+        fd.close()
+ 
+
+We will open the first file i.e., Files/1 in read mode then print it using fd.read() and close the file.
+
+This will be done for all files hence bulk file reading
